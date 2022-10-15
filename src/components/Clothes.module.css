@@ -1,0 +1,15 @@
+.clothes {
+  width: 20.137rem;
+  height: 30.206rem;
+}
+.clothes:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.2);
+}
+.heading-collection {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.33995rem;
+  line-height: 1.6rem;
+}

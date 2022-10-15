@@ -1,0 +1,14 @@
+.clothes-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 70px;
+  list-style-type: none;
+}
+.heading-collection {
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 8.1rem;
+  margin-bottom: 2rem;
+  margin-left: 4rem;
+}
