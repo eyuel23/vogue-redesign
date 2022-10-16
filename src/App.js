@@ -1,41 +1,25 @@
+import { Route, Routes } from "react-router";
 import "./App.css";
-import Button from "./components/Button";
-import ClothesSection from "./components/Clothes-section";
-import Header from "./components/Header.js";
 import Navigation from "./components/Navigation.js";
-import Sidebar from "./components/Sidebar.js";
-import MainClothingSection from "./components/MainClothingSection";
-import { useEffect, useState } from "react";
+import Accessories from "./components/pages/Accessories";
+import Home from "./components/pages/Home";
+import Men from "./components/pages/Men";
+import Shoes from "./components/pages/Shoes";
+import Women from "./components/pages/Womens";
 
 function App() {
-  const [sticky, setSticky] = useState(false);
-  useEffect(() => {
-    const handelScroll = () => {
-      setSticky(window.scrollY > 945);
-      console.log(window.scrollY);
-    };
-    window.addEventListener("scroll", handelScroll);
-    return () => window.addEventListener("scroll", handelScroll);
-  });
-
   return (
     <>
-      <Header>
-        <Navigation />
-        <div className="collection">
-          <h1 className="heading-collection">
-            NEW WINTER <br /> COLLECTION 2022
-          </h1>
-          <Button />
-        </div>
-      </Header>
-      <ClothesSection>
-        {sticky && <Navigation />}
-        <div className="section-2">
-          <Sidebar />
-          <MainClothingSection />
-        </div>
-      </ClothesSection>
+      <Navigation />
+      <div className="container">
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/Women" element={<Women />}></Route>
+          <Route path="/Men" element={<Men />}></Route>
+          <Route path="/Accessories" element={<Accessories />}></Route>
+          <Route path="/Shoes" element={<Shoes />}></Route>
+        </Routes>
+      </div>
     </>
   );
 }

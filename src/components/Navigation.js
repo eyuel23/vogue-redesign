@@ -3,40 +3,51 @@ import search from "../images/search.svg";
 import heart from "../images/heart.svg";
 import cart from "../images/cart.svg";
 import profile from "../images/profile.svg";
-import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 const Navigation = () => {
-  const [sticky, setSticky] = useState(false);
-  useEffect(() => {
-    const handelScroll = () => {
-      setSticky(window.scrollY > 940);
-    };
-    window.addEventListener("scroll", handelScroll);
-    return () => window.addEventListener("scroll", handelScroll);
-  });
+  const pathName = useLocation().pathname;
+  let [location, setLocation] = useState(pathName);
 
+  useEffect(() => {
+    setLocation(pathName);
+  }, [pathName]);
   return (
     <>
       <div
         className={
-          sticky ? classes.navigation && classes.sticky : classes["navigation"]
+          location === "/"
+            ? classes.navigation
+            : `${classes.navigation} ${classes["navigation-pages"]}`
         }
       >
         <div className={classes.logo}>
-          <h1 className={classes["logo-navigation"]}>Vogue</h1>
+          <Link to={"/"} className={classes["logo-navigation"]}>
+            Vogue
+          </Link>
         </div>
         <nav className={classes.navigation__nav}>
           <ul className={classes.navigation__list}>
             <li className={classes.navigation__item}>
-              <h1 className={classes.navigation__link}>Women</h1>
+              <Link to={"/Women"} className={classes.navigation__link}>
+                Women
+              </Link>
             </li>
             <li className={classes.navigation__item}>
-              <h1 className={classes.navigation__link}>Men</h1>
+              <Link to={"/Men"} className={classes.navigation__link}>
+                Men
+              </Link>
             </li>
             <li className={classes.navigation__item}>
-              <h1 className={classes.navigation__link}>Accesories</h1>
+              <Link to={"/Accessories"} className={classes.navigation__link}>
+                Accesories
+              </Link>
             </li>
             <li className={classes.navigation__item}>
-              <h1 className={classes.navigation__link}>Shoes</h1>
+              <Link to={"/Shoes"} className={classes.navigation__link}>
+                Shoes
+              </Link>
             </li>
           </ul>
         </nav>
@@ -49,6 +60,7 @@ const Navigation = () => {
               <img src={heart} alt=""></img>
             </li>
             <li className={classes.navigation__item}>
+              <h1 className={classes.cartNo}>1</h1>
               <img src={cart} alt=""></img>
             </li>
             <li className={classes.navigation__item}>

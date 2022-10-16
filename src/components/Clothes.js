@@ -2,8 +2,9 @@ import classes from "./Clothes.module.css";
 const Clothes = (props) => {
   const clothe = props.clothe;
   return (
-    <li>
+    <li onClick={props.onConfirm}>
       <img
+        id={clothe.id}
         src={require(`../${clothe.url}.jpeg`)}
         alt="images"
         className={classes.clothes}

@@ -3,6 +3,9 @@
   height: 82px;
   border: 1px solid #ffffff;
   background-color: transparent;
+}
+.button-link {
+  text-decoration: none;
   color: #ffffff;
   font-family: "Didot";
   font-style: normal;

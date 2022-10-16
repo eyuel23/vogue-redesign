@@ -1,0 +1,14 @@
+.label {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+.dropdown {
+  margin: 1rem;
+}
+.select {
+  width: 25rem;
+  height: 3rem;
+}

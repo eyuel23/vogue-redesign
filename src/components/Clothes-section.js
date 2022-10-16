@@ -1,5 +1,7 @@
 import classes from "./Clothes-section.module.css";
 const ClothesSection = (props) => {
-  return <div className={classes["clothes-section"]}>{props.children}</div>;
+  return (
+    <section className={classes["clothes-section"]}>{props.children}</section>
+  );
 };
 export default ClothesSection;

@@ -1,4 +1,5 @@
 .navigation {
+  position: fixed;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -6,6 +7,14 @@
   color: #ffffff;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid #ffffff;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+.navigation-pages {
+  background-color: #000000;
+  z-index: 10;
 }
 .navigation__nav {
   align-self: center;
@@ -26,24 +35,25 @@
 .navigation__link {
   text-decoration: none;
   color: #ffffff;
+  font-size: 1.3rem;
 }
 .logo-navigation {
   align-self: flex-end;
   font-family: "didot";
   font-size: 2.5rem;
   color: #ffffff;
+  text-decoration: none;
 }
 .logo {
   margin: 0 10rem 0 2rem;
   display: flex;
 }
-.sticky {
-  position: sticky;
-  top: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-top: 2rem;
-  background-color: #000000;
-  z-index: 10;
+.cartNo {
+  position: absolute;
+  color: #ffffff;
+  /* left: 30%;
+  top: 50%; */
+  margin-left: 1rem;
+  margin-top: 0.4rem;
+  font-size: 1rem;
 }
