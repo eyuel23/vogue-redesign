@@ -5,7 +5,7 @@ const Clothes = (props) => {
     <li onClick={props.onConfirm}>
       <img
         id={clothe.id}
-        src={require(`../${clothe.url}.jpeg`)}
+        src={require(`../../${clothe.url}.jpeg`)}
         alt="images"
         className={classes.clothes}
       />

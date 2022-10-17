@@ -1,6 +1,6 @@
 import Clothes from "./Clothes.js";
-import Men from "../Data/Mens.json";
-import Women from "../Data/Womens.json";
+import Men from "../../Data/Mens.json";
+import Women from "../../Data/Womens.json";
 import classes from "./MainClothingSection.module.css";
 import Popup from "./Popup.js";
 import { useEffect, useState } from "react";

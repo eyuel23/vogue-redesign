@@ -1,5 +1,6 @@
 import Dropdown from "./DropdownSize";
 import classes from "./Popup.module.css";
+import BlackButton from "../buttons/BlackButton";
 
 const Popup = (props) => {
   return (
@@ -10,19 +11,17 @@ const Popup = (props) => {
           <img
             className={classes.image}
             alt="popup"
-            src={require(`../images/Mens/second-${props.id}.jpeg`)}
+            src={require(`../../images/Mens/second-${props.id}.jpeg`)}
           />
         ) : (
           <img
             className={classes.image}
             alt="popup"
-            src={require(`../images/Womens/second-${props.id}.jpeg`)}
+            src={require(`../../images/Womens/second-${props.id}.jpeg`)}
           />
         )}
         <Dropdown />
-        <button onClick={props.onExit} className={classes.btn}>
-          Add to bag
-        </button>
+        <BlackButton onPop={props.onExit}>Add to bag</BlackButton>
       </div>
     </div>
   );

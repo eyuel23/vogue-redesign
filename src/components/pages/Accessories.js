@@ -1,6 +1,6 @@
-import Sidebar from "../Sidebar.js";
-import MainClothingSection from "../MainClothingSection";
-import ClothesSection from "../Clothes-section";
+import Sidebar from "../Navigation/Sidebar.js";
+import MainClothingSection from "../clothes/MainClothingSection";
+import ClothesSection from "../clothes/Clothes-section";
 import classes from "./Accessories.module.css";
 const Accessories = () => {
   return (

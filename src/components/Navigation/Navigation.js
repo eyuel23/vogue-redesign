@@ -1,12 +1,12 @@
 import classes from "./Navigation.module.css";
-import search from "../images/search.svg";
-import heart from "../images/heart.svg";
-import cart from "../images/cart.svg";
-import profile from "../images/profile.svg";
+import Search from "./Search";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-const Navigation = () => {
+import Favorite from "./Favourite";
+import Cart from "./Cart";
+import Profile from "./Profile";
+const Navigation = (props) => {
   const pathName = useLocation().pathname;
   let [location, setLocation] = useState(pathName);
 
@@ -53,19 +53,10 @@ const Navigation = () => {
         </nav>
         <nav className={classes.navigation__nav}>
           <ul className={classes.navigation__list}>
-            <li className={classes.navigation__item}>
-              <img src={search} alt=""></img>
-            </li>
-            <li className={classes.navigation__item}>
-              <img src={heart} alt=""></img>
-            </li>
-            <li className={classes.navigation__item}>
-              <h1 className={classes.cartNo}>1</h1>
-              <img src={cart} alt=""></img>
-            </li>
-            <li className={classes.navigation__item}>
-              <img src={profile} alt=""></img>
-            </li>
+            <Search />
+            <Favorite />
+            <Cart onConfirm={props.onCart} />
+            <Profile />
           </ul>
         </nav>
       </div>
