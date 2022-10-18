@@ -15,6 +15,7 @@ function App() {
   const cartHandler = () => {
     setXew(!xew);
   };
+
   return (
     <>
       <Navigation onCart={cartHandler} />

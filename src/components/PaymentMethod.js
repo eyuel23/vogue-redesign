@@ -1,10 +1,12 @@
 import classes from "./PaymentMethod.module.css";
+import Card from "../images/credit-card.svg";
+import Paypal from "../images/Paypal.svg";
 const Payment = () => {
   return (
     <>
       <div className={classes.method}>
         <h1 className={classes.heading}>Payment Method</h1>
-        <div>
+        <div className={classes.card}>
           <input
             className={classes.input}
             type="radio"
@@ -13,7 +15,7 @@ const Payment = () => {
             value="HTML"
           />
           <label className={classes.input} for="html">
-            HTML
+            <img src={Card} alt="card" />
           </label>
            
           <input
@@ -25,7 +27,7 @@ const Payment = () => {
           />
            
           <label className={classes.input} for="css">
-            CSS
+            <img src={Paypal} alt="card" />
           </label>
         </div>
         <div className={classes.details}>

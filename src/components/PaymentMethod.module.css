@@ -1,5 +1,5 @@
 .input {
-  margin: 2rem;
+  margin: 1.5rem;
 }
 .heading {
   margin-top: 3rem;
@@ -29,7 +29,8 @@
   height: 4rem;
   margin: 2rem 3rem 2rem 0;
 }
-.btn {
+.btn,
+.card {
   display: flex;
   align-items: center;
 }
