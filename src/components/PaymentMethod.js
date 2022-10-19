@@ -1,6 +1,7 @@
 import classes from "./PaymentMethod.module.css";
 import Card from "../images/credit-card.svg";
 import Paypal from "../images/Paypal.svg";
+import { Link } from "react-router-dom";
 const Payment = () => {
   return (
     <>
@@ -49,8 +50,10 @@ const Payment = () => {
         <div className={classes.btn}>
           <button className={classes.btnwhite}>Back</button>
           <button className={classes.btnblack}>
-            {" "}
-            Confirm Payment: $14.88{" "}
+            <Link className={classes.btnblack} to="/Confirm">
+              {" "}
+              Confirm Payment: $14.88{" "}
+            </Link>
           </button>
         </div>
       </div>

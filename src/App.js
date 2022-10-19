@@ -7,6 +7,7 @@ import Accessories from "./components/pages/Accessories";
 import Checkout from "./components/pages/Checkout";
 import Home from "./components/pages/Home";
 import Men from "./components/pages/Men";
+import OrderConfirm from "./components/pages/OrderConfirm";
 import Shoes from "./components/pages/Shoes";
 import Women from "./components/pages/Womens";
 
@@ -28,6 +29,7 @@ function App() {
           <Route path="/Accessories" element={<Accessories />}></Route>
           <Route path="/Shoes" element={<Shoes />}></Route>
           <Route path="/Checkout" element={<Checkout />}></Route>
+          <Route path="/Confirm" element={<OrderConfirm />}></Route>
         </Routes>
       </div>
     </>
