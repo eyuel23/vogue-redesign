@@ -1,5 +1,7 @@
 .confirm {
   margin: 10rem;
+
+  text-align: center;
 }
 .complete {
   font-size: 5rem;
