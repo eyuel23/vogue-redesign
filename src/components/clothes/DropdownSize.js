@@ -3,7 +3,7 @@ const Dropdown = () => {
   return (
     <>
       <div className={classes.dropdown}>
-        <label className={classes.label} for="Size">
+        <label className={classes.label} htmlFor="Size">
           Select Size:
         </label>
 

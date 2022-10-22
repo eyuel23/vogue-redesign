@@ -9,6 +9,7 @@ import Home from "./components/pages/Home";
 import Men from "./components/pages/Men";
 import OrderConfirm from "./components/pages/OrderConfirm";
 import Shoes from "./components/pages/Shoes";
+import UserProfile from "./components/pages/UserProfile";
 import Women from "./components/pages/Womens";
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
           <Route path="/Shoes" element={<Shoes />}></Route>
           <Route path="/Checkout" element={<Checkout />}></Route>
           <Route path="/Confirm" element={<OrderConfirm />}></Route>
+          <Route path="/Profile" element={<UserProfile />}></Route>
         </Routes>
       </div>
     </>

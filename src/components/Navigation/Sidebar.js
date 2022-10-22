@@ -37,8 +37,8 @@ const Sidebar = () => {
       <div className={classes.sidebar}>
         <h1 className={classes.heading}>Shop by Product</h1>
         <ul>
-          {SidebarContent.map((filter) => {
-            return <FilterList>{filter}</FilterList>;
+          {SidebarContent.map((filter, index) => {
+            return <FilterList key={index}>{filter}</FilterList>;
           })}
         </ul>
       </div>

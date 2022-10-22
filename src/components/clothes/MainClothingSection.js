@@ -3,24 +3,27 @@ import Men from "../../Data/Mens.json";
 import Women from "../../Data/Womens.json";
 import classes from "./MainClothingSection.module.css";
 import Popup from "./Popup.js";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { pathactions } from "../../store/index.js";
+import { useDispatch, useSelector } from "react-redux";
 
 const MainClothingSection = (props) => {
-  const [pop, setPop] = useState(false);
-  const [x, setX] = useState("");
+  const dispatch = useDispatch();
+  const pop = useSelector((state) => state.path.pop);
+  const x = useSelector((state) => state.path.x);
+  const location = useSelector((state) => state.path.location);
   const popupHandler = (e) => {
-    setPop(true);
-    setX(e.target.id);
+    dispatch(pathactions.changePop(true));
+    dispatch(pathactions.changeX(e.target.id));
   };
   const pathName = useLocation().pathname.split("/")[1];
-  let [location, setLocation] = useState(pathName);
 
   useEffect(() => {
-    setLocation(pathName);
-  }, [pathName]);
+    dispatch(pathactions.chnageLocation(pathName));
+  }, [pathName, dispatch]);
   const exitHandler = () => {
-    setPop(false);
+    dispatch(pathactions.changePop(false));
   };
   return (
     <>
@@ -32,14 +35,22 @@ const MainClothingSection = (props) => {
         </h1>
         <ul className={classes["clothes-list"]}>
           {location === "Women"
-            ? Women.map((filter) => {
+            ? Women.map((filter, index) => {
                 return (
-                  <Clothes onConfirm={popupHandler} clothe={filter}></Clothes>
+                  <Clothes
+                    key={index}
+                    onConfirm={popupHandler}
+                    clothe={filter}
+                  ></Clothes>
                 );
               })
-            : Men.map((filter) => {
+            : Men.map((filter, index) => {
                 return (
-                  <Clothes onConfirm={popupHandler} clothe={filter}></Clothes>
+                  <Clothes
+                    key={index}
+                    onConfirm={popupHandler}
+                    clothe={filter}
+                  ></Clothes>
                 );
               })}
         </ul>

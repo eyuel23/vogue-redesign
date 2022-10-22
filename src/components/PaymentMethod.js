@@ -15,7 +15,7 @@ const Payment = () => {
             name="fav_language"
             value="HTML"
           />
-          <label className={classes.input} for="html">
+          <label className={classes.input} htmlFor="html">
             <img src={Card} alt="card" />
           </label>
            
@@ -27,7 +27,7 @@ const Payment = () => {
             value="CSS"
           />
            
-          <label className={classes.input} for="css">
+          <label className={classes.input} htmlFor="css">
             <img src={Paypal} alt="card" />
           </label>
         </div>
