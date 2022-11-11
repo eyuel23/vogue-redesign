@@ -57,3 +57,23 @@
   margin-top: 0.4rem;
   font-size: 1rem;
 }
+
+.navbtn {
+  display: none;
+  position: absolute;
+  right: 1rem;
+  top: 2.2rem;
+  background-color: transparent;
+  border-style: none;
+}
+.navsvg {
+  fill: #ffffff;
+}
+@media screen and (max-width: 500px) {
+  .navigation {
+    flex-direction: column;
+  }
+  .navbtn {
+    display: block;
+  }
+}
