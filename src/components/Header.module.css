@@ -1,7 +1,7 @@
 .header {
   background-image: url(../images/background-2.jpg);
   background-size: cover;
-  min-height: 95rem;
+  min-height: 100vh;
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
@@ -11,5 +11,6 @@
   only screen and (min-width: 125em) {
   .header {
     background-image: url(../images/background-2.jpg);
+    background-size: center;
   }
 }

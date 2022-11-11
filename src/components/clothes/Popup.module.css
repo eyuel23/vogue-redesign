@@ -10,9 +10,11 @@
 
 .modal {
   position: fixed;
-  left: calc(50% - 20rem);
-  top: 10vh;
-  width: 30%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 40rem;
+  max-width: 30%;
   z-index: 100;
   overflow: hidden;
   background-color: #ffffff;
@@ -25,11 +27,3 @@
   width: 70%;
   height: 70%;
 }
-
-/* @media (min-width: 768px) {
-  .modal {
-    left: calc(50% - 20rem);
-    width: 337.57px;
-    height: 506.36px;
-  }
-} */
