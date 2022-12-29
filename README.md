@@ -1,3 +1,19 @@
+<div align="center">
+<a href="https://eyuelmuler.vercel.app/" target="_blank">
+  <img alt="Logo" src="https://raw.githubusercontent.com/eyuel23/CoinPool/main/public/ether.png" width="100" />
+  </a>
+</div>
+<h1 align="center">
+  eyuelmuler.vercel.app - Portfolio-v1
+</h1>
+<p align="center">
+  The first iteration of <a href="https://eyuelmuler.vercel.app/" target="_blank">eyuelmuler.vercel.app</a> built with <a href="https://nextjs.org/" target="_blank">Next-js</a> and hosted with <a href="https://www.vercel.com/" target="_blank">Vercel</a>
+</p>
+<p align="center">
+  <a href="https://eyuelmuler.vercel.app/" target="_blank">
+    <img src="https://raw.githubusercontent.com/eyuel23/Portfolio-v1/main/public/header.png" alt="vercel status"  width="400"/>
+  </a>
+</p>
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
