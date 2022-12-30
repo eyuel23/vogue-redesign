@@ -1,16 +1,16 @@
 <div align="center">
-<a href="https://eyuelmuler.vercel.app/" target="_blank">
+<a href=https://vogue-redesign.vercel.app target="_blank">
   <img alt="https://raw.githubusercontent.com/eyuel23/vogue-redesign/main/src/images/background-2.webp" width="100" />
   </a>
 </div>
 <h1 align="center">
-  eyuelmuler.vercel.app - Portfolio-v1
+  vogue-redesign.vercel.app - vogue-redesign
 </h1>
 <p align="center">
-  A e-commerce site inspired by vogue <a href="https://eyuelmuler.vercel.app/" target="_blank">eyuelmuler.vercel.app</a> built with <a href="https://reactjs.org/" target="_blank">React-js</a> and hosted with <a href="https://www.github.com/" target="_blank">Github</a>
+  A e-commerce site inspired by vogue <a href=https://vogue-redesign.vercel.app target="_blank">vogue-redesign.vercel.app</a> built with <a href="https://reactjs.org/" target="_blank">React-js</a> and hosted with <a href="https://www.github.com/" target="_blank">Github</a>
 </p>
 <p align="center">
-  <a href="https://eyuelmuler.vercel.app/" target="_blank">
+  <a href="https://vogue-redesign.vercel.app" target="_blank">
     <img src="https://raw.githubusercontent.com/eyuel23/vogue-redesign/main/src/images/background.webp" alt="vercel status"  width="400"/>
   </a>
 </p>
