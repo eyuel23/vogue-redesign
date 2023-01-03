@@ -13,15 +13,17 @@ import UserProfile from "./components/pages/UserProfile";
 import Women from "./components/pages/Womens";
 
 function App() {
-  const [xew, setXew] = useState(false);
-  const cartHandler = () => {
-    setXew(!xew);
+  const [cart, setCart] = useState(false);
+  const showCart = () => {
+    setCart(true);
   };
-
+  const hideCart = () => {
+    setCart(false);
+  };
   return (
     <>
-      <Navigation onCart={cartHandler} />
-      {xew && <PopupCart />}
+      <Navigation onCart={showCart} />
+      {cart && <PopupCart onHide={hideCart} />}
       <div className="container">
         <Routes>
           <Route path="/" element={<Home />}></Route>

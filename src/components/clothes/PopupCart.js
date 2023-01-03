@@ -1,9 +1,9 @@
 import BlackButton from "../buttons/BlackButton";
 import classes from "./PopupCart.module.css";
 import { Link } from "react-router-dom";
-const PopupCart = () => {
+const PopupCart = (props) => {
   return (
-    <div className={classes.box}>
+    <div className={classes.box} onMouseLeave={props.onHide}>
       <h1 className={classes.heading}>Your Cart</h1>
       <div className={classes.checkout}>
         <div className={classes.total}>
